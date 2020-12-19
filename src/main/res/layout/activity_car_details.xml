@@ -8,7 +8,7 @@
     android:orientation="vertical"
     tools:context=".view.cars.CarDetailsActivity"
     android:background="#048260">
-
+///////////////////////////////////////////////////////////////
     <ImageView
         android:id="@+id/imgCar"
         android:layout_width="250dp"
