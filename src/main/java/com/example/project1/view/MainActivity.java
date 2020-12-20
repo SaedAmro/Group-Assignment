@@ -1,6 +1,9 @@
 package com.example.project1.view;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -38,6 +41,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         list = findViewById(R.id.lstVwStoresList);
         storesList = new ArrayList<String>();
+
+
+
+
+        RecyclerView recycler = (RecyclerView)findViewById(R.id.electronicDescription);
+
+
+
+
 
         Gson gson = new Gson();
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
@@ -80,6 +92,9 @@ public class MainActivity extends AppCompatActivity {
             }
         };
         list.setOnItemClickListener(itemClickListener);
+
+      // recycler.setLayoutManager( new LinearLayoutManager(this));
+
 
     }
 

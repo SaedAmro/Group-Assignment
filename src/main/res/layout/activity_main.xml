@@ -23,16 +23,4 @@
         />
 
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnGoToSelected"
-        android:onClick="goToSelectedItems"
-        android:text="Selected Item"
-        android:layout_gravity="center"
-        android:background="@drawable/btns"
-        android:textColor="#990099"
-        android:textSize="20dp"
-        />
-
 </LinearLayout>
